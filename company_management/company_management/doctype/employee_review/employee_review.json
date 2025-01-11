@@ -1,0 +1,62 @@
+{
+  "autoname": "format:{employee} Review - {#####}",
+  "actions": [],
+  "allow_rename": 1,
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "fields": [
+    {
+      "fieldname": "employee",
+      "label": "Employee",
+      "fieldtype": "Link",
+      "options": "Employee",
+      "reqd": 1
+    },
+    {
+      "fieldname": "status",
+      "label": "Status",
+      "fieldtype": "Select",
+      "options": "\nPending Review\nReview Scheduled\nFeedback Provided\nUnder Approval\nReview Approved\nReview Rejected",
+      "reqd": 1,
+      "default": "Pending Review"
+    },
+    {
+      "fieldname": "review_date",
+      "label": "Review Date",
+      "fieldtype": "Date"
+    },
+    {
+      "fieldname": "feedback",
+      "label": "Feedback",
+      "fieldtype": "Text",
+      "reqd": 0
+    },
+    {
+      "fieldname": "manager_comments",
+      "label": "Manager Comments",
+      "fieldtype": "Small Text"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "module": "Company Management",
+  "name": "Employee Review",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": []
+}
