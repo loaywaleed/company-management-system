@@ -1,0 +1,92 @@
+{
+  "actions": [],
+  "allow_rename": 1,
+  "doctype": "DocType",
+  "field_order": [
+    "employee_name",
+    "company",
+    "department",
+    "email",
+    "mobile_number",
+    "address",
+    "designation",
+    "hired_on",
+    "days_employed"
+  ],
+  "fields": [
+    {
+      "fieldname": "employee_name",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "label": "Employee Name",
+      "reqd": 1
+    },
+    {
+      "fieldname": "company",
+      "fieldtype": "Link",
+      "options": "Company",
+      "label": "Company",
+      "reqd": 1
+    },
+    {
+      "fieldname": "department",
+      "fieldtype": "Link",
+      "options": "Department",
+      "label": "Department",
+      "reqd": 1
+    },
+    {
+      "fieldname": "email_address",
+      "fieldtype": "Data",
+      "label": "Email Address",
+      "reqd": 1
+    },
+    {
+      "fieldname": "mobile_number",
+      "fieldtype": "Data",
+      "label": "Mobile Number"
+    },
+    {
+      "fieldname": "address",
+      "fieldtype": "Small Text",
+      "label": "Address"
+    },
+    {
+      "fieldname": "designation",
+      "fieldtype": "Data",
+      "label": "Designation",
+      "reqd": 1
+    },
+    {
+      "fieldname": "hired_on",
+      "fieldtype": "Date",
+      "label": "Hired On"
+    },
+    {
+      "fieldname": "days_employed",
+      "fieldtype": "Int",
+      "label": "Days Employed",
+      "read_only": 1
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "module": "Company Management",
+  "name": "Employee",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC"
+}
