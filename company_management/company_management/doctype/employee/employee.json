@@ -1,17 +1,20 @@
 {
   "actions": [],
   "allow_rename": 1,
+  "autoname": "format:{department}-Employee-{#####}",
+  "creation": "2025-01-11 16:43:52.850752",
   "doctype": "DocType",
+  "engine": "InnoDB",
   "field_order": [
     "employee_name",
     "company",
     "department",
-    "email",
     "mobile_number",
     "address",
     "designation",
     "hired_on",
-    "days_employed"
+    "days_employed",
+    "email_address"
   ],
   "fields": [
     {
@@ -24,15 +27,15 @@
     {
       "fieldname": "company",
       "fieldtype": "Link",
-      "options": "Company",
       "label": "Company",
+      "options": "Company",
       "reqd": 1
     },
     {
       "fieldname": "department",
       "fieldtype": "Link",
-      "options": "Department",
       "label": "Department",
+      "options": "Department",
       "reqd": 1
     },
     {
@@ -70,8 +73,12 @@
     }
   ],
   "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2025-01-11 16:52:10.077062",
+  "modified_by": "Administrator",
   "module": "Company Management",
   "name": "Employee",
+  "naming_rule": "Expression",
   "owner": "Administrator",
   "permissions": [
     {
@@ -88,5 +95,6 @@
     }
   ],
   "sort_field": "modified",
-  "sort_order": "DESC"
+  "sort_order": "DESC",
+  "states": []
 }
