@@ -1,7 +1,7 @@
 {
   "actions": [],
   "allow_rename": 1,
-  "autoname": "format:{company_name}-{department_name}",
+  "autoname": "format:{company}-{department_name}",
   "creation": "2025-01-11 14:00:00.000000",
   "doctype": "DocType",
   "engine": "InnoDB",
