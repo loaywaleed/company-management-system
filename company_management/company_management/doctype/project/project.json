@@ -1,27 +1,24 @@
 {
+  "autoname": "format:{department}-Project-{#####}",
   "actions": [],
   "allow_rename": 1,
-  "autoname": "format:{department}-Employee-{#####}",
-  "creation": "2025-01-11 16:43:52.850752",
   "doctype": "DocType",
   "engine": "InnoDB",
   "field_order": [
-    "employee_name",
+    "project_name",
     "company",
     "department",
-    "mobile_number",
-    "address",
-    "designation",
-    "hired_on",
-    "days_employed",
-    "email_address"
+    "description",
+    "start_date",
+    "end_date",
+    "assigned_employees"
   ],
   "fields": [
     {
-      "fieldname": "employee_name",
+      "fieldname": "project_name",
       "fieldtype": "Data",
       "in_list_view": 1,
-      "label": "Employee Name",
+      "label": "Project Name",
       "reqd": 1
     },
     {
@@ -39,46 +36,33 @@
       "reqd": 1
     },
     {
-      "fieldname": "email_address",
-      "fieldtype": "Data",
-      "label": "Email Address",
-      "reqd": 1
-    },
-    {
-      "fieldname": "mobile_number",
-      "fieldtype": "Data",
-      "label": "Mobile Number"
-    },
-    {
-      "fieldname": "address",
+      "fieldname": "description",
       "fieldtype": "Small Text",
-      "label": "Address"
+      "label": "Description"
     },
     {
-      "fieldname": "designation",
-      "fieldtype": "Data",
-      "label": "Designation",
-      "reqd": 1
-    },
-    {
-      "fieldname": "hired_on",
+      "fieldname": "start_date",
       "fieldtype": "Date",
-      "label": "Hired On"
+      "label": "Start Date"
     },
     {
-      "fieldname": "days_employed",
-      "fieldtype": "Int",
-      "label": "Days Employed",
-      "read_only": 1
+      "fieldname": "end_date",
+      "fieldtype": "Date",
+      "label": "End Date"
+    },
+    {
+      "fieldname": "assigned_employees",
+      "fieldtype": "Table MultiSelect",
+      "label": "Assigned Employees",
+      "options": "Employee Assignment"
     }
   ],
   "index_web_pages_for_search": 1,
   "links": [],
-  "modified": "2025-01-11 16:52:10.077062",
+  "modified": "2025-01-11 19:37:43.800905",
   "modified_by": "Administrator",
   "module": "Company Management",
-  "name": "Employee",
-  "naming_rule": "Expression",
+  "name": "Project",
   "owner": "Administrator",
   "permissions": [
     {
@@ -96,6 +80,5 @@
   ],
   "sort_field": "modified",
   "sort_order": "DESC",
-  "states": [],
-  "is_single": 0
+  "states": []
 }
