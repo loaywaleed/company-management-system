@@ -88,6 +88,18 @@
       "role": "Manager",
       "share": 0,
       "write": 1
+    },
+    {
+      "create": 0,
+      "delete": 0,
+      "email": 1,
+      "export": 0,
+      "print": 0,
+      "read": 1,
+      "report": 0,
+      "role": "Employee",
+      "share": 1,
+      "write": 0
     }
   ],
   "sort_field": "modified",
