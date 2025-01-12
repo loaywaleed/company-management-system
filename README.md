@@ -223,6 +223,6 @@ I would say implementing the role based access control was tricky as well as rep
 
 ### Documentation
 For detailed information, visit the documentation:
-- [Postman API documentation](docs/BRAINWISE-API.md)
+- [Postman API documentation](docs/BRAINWISE-API.json)
 - [Demo](docs/DEMO.md)
 
