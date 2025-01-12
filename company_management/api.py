@@ -7,10 +7,7 @@ from utils import build_response
 def patch_employee(employee_id, fields):
     """Update an employee record with the patch fields."""
     try:
-        # Get the employee document
         employee = frappe.get_doc("Employee", employee_id)
-
-        # Update the employee with the provided fields
         employee.update(fields)
         employee.save()
 
