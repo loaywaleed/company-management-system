@@ -102,7 +102,9 @@ bench --site site.local run-tests --app company_management
 
 #### Why did I choose Frappe?
 
-I have used ERPNext before and familiar with Frappe so when I saw it gives an advantage, I decided to go for it to better maximize my chances. I definitely could have done it in Django (DRF) as well as I am well versed in it and have used it countless times and could do it too if needed.
+I have used ERPNext before so I am familiar with Frappe. When I read that it's an advantage, I decided to go for it to better maximize my chances. 
+I definitely could have done it in Django (DRF) as well, as I am well versed in it and have used it countless times and could do it too if needed.
+
 
 #### How did I start out?
 
@@ -119,6 +121,7 @@ I have started by dividing the project into steps:
 
 #### Tricky parts?
 I would say implementing the role based access control was tricky as well as replicating the app and ensuring it's easily installable.
+
 
 ## Project Requirements Checklist
 
@@ -162,6 +165,10 @@ I would say implementing the role based access control was tricky as well as rep
 - [x] Under Approval → Review Approved (when approved by manager)
 - [x] Under Approval → Review Rejected (when rejected by manager)
 - [x] Review Rejected → Feedback Provided (when feedback updated)
+
+### Assumptions:
+I assumed that the ones that arent specified that they should be done by a manager, are done by an HR user (like scheduling reviews). It's clearer when you use the app.
+Roles: (HR/ADMIN, Manager, Employee)
 
 ## 3. Security & Permissions
 
@@ -211,7 +218,6 @@ I would say implementing the role based access control was tricky as well as rep
 
 ## 6. Logging
 - [x] Mostly the built-in logging in Frappe
-
 
 
 ### Coding Standard
