@@ -7,6 +7,17 @@ app_license = "mit"
 
 # Apps
 # ------------------
+fixtures = [
+    {
+        "dt": "Workflow",
+    },
+    {
+        "dt": "Workflow State",
+    },
+    {
+        "dt": "Workflow Transition",
+    },
+]
 
 # required_apps = []
 
@@ -241,4 +252,3 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
