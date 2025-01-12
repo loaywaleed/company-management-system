@@ -2,7 +2,6 @@
   "actions": [],
   "allow_rename": 1,
   "autoname": "format:{company_name}",
-  "creation": "2025-01-10 21:44:58.070742",
   "doctype": "DocType",
   "engine": "InnoDB",
   "field_order": [
@@ -23,25 +22,26 @@
       "fieldname": "number_of_employees",
       "fieldtype": "Int",
       "label": "Number of employees",
-      "read_only": 1
+      "read_only": 1,
+      "default": 0
     },
     {
       "fieldname": "number_of_departments",
       "fieldtype": "Int",
       "label": "Number of departments",
-      "read_only": 1
+      "read_only": 1,
+      "default": 0
     },
     {
       "fieldname": "number_of_projects",
       "fieldtype": "Int",
       "label": "Number of projects",
-      "read_only": 1
+      "read_only": 1,
+      "default": 0
     }
   ],
   "index_web_pages_for_search": 1,
   "links": [],
-  "modified": "2025-01-11 13:32:43.480523",
-  "modified_by": "Administrator",
   "module": "Company Management",
   "name": "Company",
   "owner": "Administrator",
